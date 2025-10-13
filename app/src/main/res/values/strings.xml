@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Senior Care Plus</string>
+    <string name="medicine_reminder_title">Medication Schedule</string>
+    <string name="medicine_name_hint">Medicine name</string>
+    <string name="date_hint">Select date</string>
+    <string name="time_hint">Select time</string>
+    <string name="frequency_hint">Frequency (hours)</string>
+    <string name="countdown_default">Next dosage in: --:--:--</string>
+    <string name="set_reminder_button">Set Medication Reminder</string>
+</resources>

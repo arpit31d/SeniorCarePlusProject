@@ -1,0 +1,7 @@
+<resources>
+    <color name="primary_color">#6200EE</color>
+    <color name="secondary_color">#03DAC6</color>
+    <color name="background_grey">#FAFAFA</color>
+    <color name="notification_color">#FF4081</color>
+</resources>
+

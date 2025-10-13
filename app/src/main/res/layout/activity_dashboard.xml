@@ -1,0 +1,25 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+    <TextView
+        android:id="@+id/userDetailsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Info"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/newPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Password"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/resetPasswordButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset Password"/>
+
+</LinearLayout>

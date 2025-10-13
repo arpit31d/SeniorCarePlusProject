@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background"
+    tools:context=".MainPage">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- Dashboard Section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/dashboardTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome To SeniorCare+"
+                android:textSize="24sp"
+                android:textColor="@color/primary"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/expandDashboardButton"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="Expand Dashboard"
+                android:src="@drawable/ic_expand" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dashboardInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- User Info Button Card -->
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp"
+            card_view:cardUseCompatPadding="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnUserInfo"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter User Information"
+                android:textColor="@color/primary"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_user_info"
+                app:iconGravity="start"
+                app:strokeColor="@color/primary"
+                app:strokeWidth="1dp"
+                android:padding="12dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Medication Reminder Button Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp"
+            card_view:cardUseCompatPadding="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/reminder"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medication Reminder"
+                app:icon="@drawable/ic_reminder"
+                app:iconGravity="start"
+                app:strokeColor="@color/primary"
+                app:strokeWidth="1dp"
+                android:textColor="@color/primary"
+                app:cornerRadius="12dp"
+                android:padding="12dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Manage Medications Button Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp"
+            card_view:cardUseCompatPadding="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/manageMedicationsButton"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manage Medications"
+                app:cornerRadius="12dp"
+                android:padding="12dp"
+                android:textColor="@color/primary" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Reset Password Button Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp"
+            card_view:cardUseCompatPadding="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/resetPasswordButton"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reset Password"
+                app:cornerRadius="12dp"
+                android:padding="12dp"
+                android:textColor="@color/primary" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Schedule Appointment Button Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp"
+            card_view:cardUseCompatPadding="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/schedule"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Schedule Appointment"
+                app:icon="@drawable/ic_schedule"
+                app:iconGravity="start"
+                app:strokeColor="@color/primary"
+                app:strokeWidth="1dp"
+                android:textColor="@color/primary"
+                app:cornerRadius="12dp"
+                android:padding="12dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Set SOS Numbers Button Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp"
+            card_view:cardUseCompatPadding="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/setNumbersButton"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set SOS Numbers"
+                app:icon="@drawable/ic_sos_settings"
+                app:iconGravity="start"
+                app:strokeColor="@color/primary"
+                app:strokeWidth="1dp"
+                android:textColor="@color/primary"
+                app:cornerRadius="12dp"
+                android:padding="12dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Send SOS Button Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp"
+            card_view:cardUseCompatPadding="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sosButton"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send SOS"
+                app:icon="@drawable/ic_sos"
+                app:iconGravity="start"
+                app:cornerRadius="12dp"
+                android:backgroundTint="@color/sos_red"
+                android:textColor="@color/white"
+                android:padding="12dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Emergency Call Button Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp"
+            card_view:cardUseCompatPadding="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/emergencyCallButton"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Emergency Call"
+                app:icon="@drawable/ic_call"
+                app:iconGravity="start"
+                app:cornerRadius="12dp"
+                android:backgroundTint="@color/emergency_blue"
+                android:textColor="@color/white"
+                android:padding="12dp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

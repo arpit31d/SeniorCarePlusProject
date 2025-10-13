@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/medicineNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Medicine Name"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/frequencyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Frequency"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/timeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Time (e.g. 08:00 AM)"
+        android:layout_marginBottom="24dp"/>
+    <Button
+        android:id="@+id/saveMedicationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Medication"/>
+</LinearLayout>
